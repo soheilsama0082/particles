@@ -20,10 +20,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '8'
-          cache: gradle
 
-      - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v3
+      - name: Set up Gradle 7.3.3
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '7.3.3'
 
       - name: Build mod
         run: gradle build --no-daemon
