@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "eg_particle_interactions",
+  "version": "1.0.0-1.16.5",
+  "name": "Particle Interactions (1.16.5 Port)",
+  "description": "A client-side recreation of selected Particle Interactions effects for Minecraft 1.16.5.",
+  "authors": ["Unofficial compatibility port"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["games.enchanted.eg_particle_interactions.fabric.ParticleInteractionsClient"]
+  },
+  "mixins": ["eg_particle_interactions.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.16.5",
+    "fabric": "*"
+  }
+}
